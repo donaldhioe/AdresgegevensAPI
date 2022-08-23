@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Adresgegevens.Models
+﻿namespace Adresgegevens.Models
 {
     public partial class Adresgegeven
     {

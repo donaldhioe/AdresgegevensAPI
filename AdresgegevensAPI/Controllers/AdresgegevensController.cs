@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Adresgegevens.Data;
 using Adresgegevens.Models;
@@ -57,11 +52,11 @@ namespace AdresgegevensAPI.Controllers
             }*/
 
             return await filtered
-                .Where(item => item.Straat.Equals(straatFilter) && item.Huisnummer.Equals(huisnummerFilter.ToString()))                
+                .Where(item => item.Straat.Equals(straatFilter) && item.Huisnummer == huisnummerFilter)                
                 .ToListAsync();
         }
 
-        [HttpGet("sort", Name = "GetAdresgegevensBySorting")]
+        [HttpGet("sortColumn", Name = "GetAdresgegevensBySorting")]
         // GET: AdresgegevensBySorting
         public async Task<ActionResult<IEnumerable<Adresgegeven>>> GetAdresgegevensBySorting(string sorting)
         {
