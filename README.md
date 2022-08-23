@@ -20,9 +20,9 @@ Het zou mogelijk zijn dat ik bepaalde packages heb geinstalleerd die toch niet n
 
 Het is niet volledig gelukt om alles goed te kunnen filteren of te sorteren. Het is alleen mogelijk om van alle kolommen van de tabel eenmalig te sorteren bij de API. Bij het sorteren wilde ik het op een ander manier code implementeren, maar huidige oplossing is via if statements om te checken welk kolom wordt gesorteerd.
 
-Voor het filteren was het alleen mogelijk om van één kolom van de tabel filteren bij de API. Met meerdere kolommen is het niet gelukt.
+Voor het filteren was het alleen mogelijk om van één kolom van de tabel filteren bij de API. Ik heb geprobeerd met 2 kolommen te filteren, maar je moet  beide invulvelden invullen om de juiste data terug te krijgen. Wat mijn bedoeling was dat er één van de twee velden worden ingevuld of beiden worden ingevuld.
 
-Voor de geolocation was het niet gelukt om een goede API te vinden, maar ik heb wel ideeën wat er wel nodig is om de afstand te kunnen berekenen.
+Voor de geolocation was het niet gelukt om een goede API te vinden. Ik heb API's kunnen vinden die afstand kunnen berekenen van 2 locaties, maar dat was alleen mogelijk als de longitude en latitude bekend waren. Ik heb wel ideeën wat er wel nodig is om de afstand te kunnen berekenen.
 
 Om de afstand van twee locaties te berekenen heb je voor beide locaties de longitude en latitude nodig om voor coördinaten te krijgen van de locaties. 
 
